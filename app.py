@@ -8,7 +8,7 @@ def tag_finder(url):
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/ytag/api/*": {"origins": "http://localhost:3000"}})
+cors = CORS(app, resources={r"/ytag/api/*": {"origins": "https://ytagfinder.onrender.com/"}})
 
 @app.route('/ytag/api/tag_finder', methods=['GET'])
 def get_tag():
